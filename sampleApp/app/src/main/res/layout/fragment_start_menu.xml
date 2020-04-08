@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".component.StartMenuFragment">
+    <TextView
+            android:id="@+id/menu_title"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/select_menu"/>
+    <Button
+            android:id="@+id/button_all_list"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="14sp"
+            android:text="@string/button_text_all_list"
+            android:layout_marginTop="20sp"
+            app:layout_constraintTop_toBottomOf="@id/menu_title"
+            app:layout_constraintStart_toStartOf="parent"
+    />
+    <Button
+            android:id="@+id/button_search"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="14sp"
+            android:text="@string/button_text_search"
+            android:layout_marginTop="20sp"
+            android:layout_marginStart="10sp"
+            app:layout_constraintTop_toBottomOf="@id/menu_title"
+            app:layout_constraintStart_toEndOf="@id/button_all_list"
+    />
+</androidx.constraintlayout.widget.ConstraintLayout>
