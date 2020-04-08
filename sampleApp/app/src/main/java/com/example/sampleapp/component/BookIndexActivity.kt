@@ -5,7 +5,7 @@ import android.os.Bundle
 import com.example.sampleapp.R
 
 /**
- * アプリ起動時のActivity。
+ * アプリのActivity。
  */
 class BookIndexActivity : AppCompatActivity() {
 

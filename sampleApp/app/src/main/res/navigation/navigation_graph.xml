@@ -4,9 +4,22 @@
             xmlns:tools="http://schemas.android.com/tools"
             android:id="@+id/navigation_graph"
             app:startDestination="@id/startMenuFragment">
-　　　　<fragment
-            android:id="@+id/startMenuFragment"
-            android:name="com.example.sampleapp.component.StartMenuFragment"
-            android:label="fragment_start_menu"
-            tools:layout="@layout/fragment_start_menu"/>
+　　<fragment
+        android:id="@+id/startMenuFragment"
+        android:name="com.example.sampleapp.component.StartMenuFragment"
+        android:label="fragment_start_menu"
+        tools:layout="@layout/fragment_start_menu">
+            <action android:id="@+id/action_startMenuFragment_to_listFragment" app:destination="@id/listFragment"/>
+            <action android:id="@+id/action_startMenuFragment_to_searchFragment" app:destination="@id/searchFragment"/>
+    </fragment>
+    <fragment android:id="@+id/searchFragment" android:name="com.example.sampleapp.component.SearchFragment"
+              android:label="SearchFragment">
+        <action android:id="@+id/action_searchFragment_to_listFragment" app:destination="@id/listFragment"/>
+    </fragment>
+    <fragment android:id="@+id/listFragment" android:name="com.example.sampleapp.component.ListFragment"
+              android:label="ListFragment">
+        <action android:id="@+id/action_listFragment_to_detailFragment" app:destination="@id/detailFragment"/>
+    </fragment>
+    <fragment android:id="@+id/detailFragment" android:name="com.example.sampleapp.component.DetailFragment"
+              android:label="DetailFragment"/>
 </navigation>
