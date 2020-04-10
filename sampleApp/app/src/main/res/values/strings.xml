@@ -5,4 +5,5 @@
     <string name="select_menu">メニュー選択</string>
     <string name="button_text_all_list">蔵書一覧を表示</string>
     <string name="button_text_search">検索</string>
+    <string name="button_text_detail">詳細表示</string>
 </resources>
